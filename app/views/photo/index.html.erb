@@ -14,7 +14,7 @@
     <h1>Photos of <%= @user.first_name %> <%= @user.last_name %></h1>
     <% @photos.each do |photo| %>
       <center>
-        <%= image_tag("/assets/#{photo.file_name}") %>
+        <%= image_tag("https://photositebucket.s3.amazonaws.com/#{photo.file_name}") %>
         <p> Photo Created At   <%= photo.date_time %></p>
         <center>
           <% @comments.where("photo_id=?",photo.id).each do |comment| %>
