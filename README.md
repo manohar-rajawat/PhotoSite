@@ -204,8 +204,7 @@ Also on Left side selection panel select "Elastic IPs" to see details of Elastic
 ![screenshot image](screenshot/39.png)
 ![screenshot image](screenshot/40.png)
 
-
-
+###### PhotoSite Images taken from - http://borg.csueastbay.edu/~grewe/CS651/ProjectR_AWS_PART1TIPS.html
 
 
 
