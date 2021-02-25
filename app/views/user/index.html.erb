@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo site</title>
+</head>
+<body bgcolor= "white">
+<div style="color:#F7F7F7">
+  <center>
+    <h1 style="font-size: 300%;">PhotoSite</h1>
+    <h3 style="font-size: 170%;"><i>Here's the user list. Select the Index to view further details of users!</i></h3>
+  </center>
+</div>
+<div>
+  <center>
+    <table>
+      <tr>
+        <th style="font-size: 140%;"><h5>   Index        </h5></th>
+        <th style="font-size: 140%;"><h5>   First Name   </h5></th>
+        <th style="font-size: 140%;"><h5>   Last Name    </h5></th>
+      </tr>
+      <% @users.each do |user| %>
+        <tr>
+          <th style="font-size: 120%;"><%= link_to user.id, user_photos_path(user.id) %></th>
+          <td style="font-size: 120%;"><%= user.first_name %></td>
+          <td style="font-size: 120%;"><%= user.last_name %></td>
+        </tr>
+      <% end %>
+    </table>
+  </center>
+</div>
+</body>
+</html>
