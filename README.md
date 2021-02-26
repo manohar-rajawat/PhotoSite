@@ -1,4 +1,15 @@
-# PhotoSite
+# PhotoSite Application & Deployment on AWS using docker
+
+## Section 1 Introduction and Purpose
+
+This is a a simple Photo sharing applicatcation made on Ruby on Rails. This application has comment section which has pre entered data using SQLite . The images for this application is stored in S3 bucket. This application is hosted on AWS using docker. The purpose of this application is to teach basics of Ruby on Rails and deploy application  to AWS EC2 (IaaS). 
+
+First, we create application on local device such as laptops/computers. Then, docker is used to create image of local Ruby on Rails application. Then, this image is used by AWS EC2 instance. 
+
+Docker is used to create image because it reduces the burden of installing each and every dependencies of application seperately. The image created by docker can directly be used by AWS EC2 instance.
+
+
+### SECTION 2) Demonstration of Application working successfully deployed via Docker & runs
 
 ### PhotoSite using Ruby Mine IDE
 1. Run this Git project using Ruby Mine IDE. This will start server in listening mode.
@@ -164,6 +175,22 @@ Click on index #4 and it will open new page. This will shows images, comments po
 ![screenshot image](screenshot/28.png)
 ![screenshot image](screenshot/29.png)
 
+
+### SECTION 3) This application is working properly.
+
+
+
+
+
+### SECTION 4) YouTube URL
+
+
+
+### SECTION 5) What happens when an instance stops running?
+
+###  Solution:
+
+
 ### AWS EC2 instance's image creation
 AWS EC2 instance's image help to create and deploy copy of existing EC2 instance
 for load balancing when one instance has fault or under heavy load of traffic.
@@ -179,6 +206,9 @@ New EC2 instance creation from AWS EC2 instance's image follow normal flow of In
 
 4. Select "AMIs" in Left Side selection link to view and launch instance of newely created image. To launch EC2 instance creation from images - select image box and click Launch and follow normal EC2 instance creation flow.
 ![screenshot image](screenshot/33.png)
+
+
+
 
 ### AWS EC2 instance's Elastic IPs
 An Elastic IP address is a static IPv4 address designed for dynamic cloud computing. An Elastic IP address is allocated to EC2 instance until it is released. So, anytime EC2 instance is stop and start (until terminated), it can use same IP address for public access.

@@ -4,10 +4,10 @@
   <title>Photosite</title>
 </head>
 
-<body bgcolor= "white">
-<div style="color:#F7F7F7">
-  <h1><center>PhotoSite</center></h1>
-  <h3><center>Page of User's photo</center></h3>
+<body>
+<div style="...">
+  <h1 style="..."><center>PhotoSite Application</center></h1>
+  <h3 style="..."><center>Page of User's photo</center></h3>
 </div>
 <div>
   <center>
@@ -20,7 +20,7 @@
           <% @comments.where("photo_id=?",photo.id).each do |comment| %>
             <li>
               <h4> Comment: <%= comment.comment_text %></h4>
-              <h4> Created at: <%= comment.date_time %></h4>
+              <h4> Commented at: <%= comment.date_time %></h4>
               <h4> Posted by: <%= link_to display_name(comment.user_id) , user_photos_path(comment.user_id) %></h4>
             </li>
             </center>
