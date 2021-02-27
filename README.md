@@ -25,6 +25,16 @@ This application has comment section which has pre entered data using SQLite dat
 EC2 instance support Elastic IP address so, that EC2 instance Start and Stop Instance doesn't change public IP addess for access of PhotoSharing application.
 This EC2 instance has image copy saved so, that when EC2 instance is under heavy load or has failure copy is this EC2 instance can be luanched for load balancing without need to PhotoSite Software deployment again and quickly.
 
+
+YouTube URL - https://www.youtube.com/watch?v=xsC_H4x3DqU
+
+
+GitHub Code Link - https://github.com/singhpayalcsu/PhotoSite
+
+
+GitHub Wiki Link - https://github.com/singhpayalcsu/PhotoSite/wiki
+
+
 ### Purpose
 
 * The purpose of this application is to learn basics using hands on exercise of Ruby on Rails application developement, database creation using Rails, AWS S3 storage bucket creation & using that, Docker Hub familiarization, docker image generation, pushing/pulling docker image to/from Docker Hub, AWS EC2 instance creation, deploying application to AWS EC2 (IaaS) and access AWS EC2 instance based running application from public IP. 
