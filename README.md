@@ -155,22 +155,30 @@ to build and generate docker image with name "photosite" and TAG "docker"
 4. Run docker image based PhotoSite app on local laptop
 using command 
 
-		docker run -it -p 3000:3000 photosite: docker 
+		docker run -it -p 3000:3000 photosite:docker 
 This will start server in listening mode.
 ![screenshot image](screenshot/6.png)
 
-5. Open "http://localhost:3000/user/index" PhotoSite URL in browser. This shows PhotoSite app's HOME page.
+5. While running docker if you face error "Your Yarn packages are out of date!"
+ Run 
+
+		rm -rf node_modules/
+		yarn install --check-files
+  Then Go to step #3 and start again
+		
+
+6. Open "http://localhost:3000/user/index" PhotoSite URL in browser. This shows PhotoSite app's HOME page.
 Click on index #4 and it will open new page. This will shows images, comments posted with date & time.
 ![screenshot image](screenshot/7.png)
 ![screenshot image](screenshot/8.png)
 ![screenshot image](screenshot/9.png)
 
-6. Check docker images created after build using command 
+7. Check docker images created after build using command 
 
 		docker images
 ![screenshot image](screenshot/10.png)
 
-7. Tag the docker image for upload using command 
+8. Tag the docker image for upload using command 
 
 		docker tag photosite:docker singhpayalcsu/photosite_docker 
 and check the image name after tagging using command 
@@ -178,15 +186,15 @@ and check the image name after tagging using command
 		docker images
 ![screenshot image](screenshot/11.png)
 
-8. Upload docker image to docker hub using command 
+9. Upload docker image to docker hub using command 
 
 		docker push singhpayalcsu/photosite_docker
 ![screenshot image](screenshot/12.png)
 
-9. Login to Docker Hub website and check "photosite_docker" image is availabel 
+10. Login to Docker Hub website and check "photosite_docker" image is availabel 
 ![screenshot image](screenshot/13.png)
 
-10. Click on "public view" and it shows docker image pull link
+11. Click on "public view" and it shows docker image pull link
 
 
 		docker pull singhpayalcsu/photosite_docker
