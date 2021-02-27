@@ -163,7 +163,6 @@ This will start server in listening mode.
  Run 
 
 		rm -rf node_modules/
-		yarn install --check-files
   Then Go to step #3 and start again
 		
 
