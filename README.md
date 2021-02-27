@@ -129,17 +129,6 @@ Click on index #4 and it will open new page. This will shows images, comments po
 
 ## SECTION 2) Demonstration of Application working successfully deployed via Docker & runs
 
-### PhotoSite using Ruby Mine IDE
-1. Run this Git project using Ruby Mine IDE. This will start server in listening mode.
-
-2. Open "http://localhost:3000/user/index" PhotoSite URL in browser. This shows PhotoSite app's HOME page.
-Click on index #4 and it will open new page. This will shows images, comments posted with date & time.
-![screenshot image](screenshot/7.png)
-![screenshot image](screenshot/8.png)
-![screenshot image](screenshot/9.png)
-
-
-
 ### Docker Image
 
 #### Create a repository in Docker Hub
@@ -393,6 +382,7 @@ Click on index #4 and it will open new page. This will shows images, comments po
 
 
 ## SECTION 4)  YouTube URL
+https://www.youtube.com/watch?v=xsC_H4x3DqU
 
 
 
