@@ -281,7 +281,7 @@ Then Run below command to login to EC2 instance (this command info is from above
 
 		chmod 400 photosite_docker.pem
 		
-		ssh -i "photosite_docker.pem" ubuntu@ec2-52-23-171-145.compute-1.amazonaws.com
+		ssh -i "photosite_docker.pem" ubuntu@ec2-3-224-158-141.compute-1.amazonaws.com
 ![screenshot image](screenshot/20.png)
 
 2. This provides EC2 instance terminal for deployment of PhotoSite app using Docker Image.
@@ -355,24 +355,24 @@ Then Run below command to login to EC2 instance (this command info is from above
 
 2. To start docker service on EC2 instance 
 
-		udo service docker start
+		sudo service docker start
 
 3. To install and run docker image of PhotoSite 
 
-		sudo docker run -it -p 3000:3000 singhpayalcsu/photosite 
+		sudo docker run -it -p 3000:3000 singhpayalcsu/photosite_docker 
 This will install PhotoSite from Docker Hub if not install and then run the PhotoSite.
 This will start PhotoSite server in listening mode.
 ![screenshot image](screenshot/26.png)
 
 ##### AWS EC2 instance running PhotoSite Access
-1. Open "http://52.23.171.145:3000/user/index" PhotoSite URL in browser. This shows PhotoSite app's HOME page.
+1. Open "http://3.224.158.141:3000/user/index" PhotoSite URL in browser. This shows PhotoSite app's HOME page.
 Click on index #4 and it will open new page. This will shows images, comments posted with date & time.
 ![screenshot image](screenshot/27.png)
 ![screenshot image](screenshot/28.png)
 ![screenshot image](screenshot/29.png)
 
 
-## SECTION 3) This application is working properly.
+## SECTION 3) This application is working properly end to end. No open issue is present.
 
 
 
