@@ -83,7 +83,8 @@ This EC2 instance has image copy saved so, that when EC2 instance is under heavy
 * Go to views and crete index.html.erb file for photo and user.
 * Go to folder 
 
-		views -> photo -> index.html.erb. Add the path of S3 bucket URL which contains image. ![screenshot image](screenshot/erb_1.png).
+		views -> photo -> index.html.erb. Add the path of S3 bucket URL which contains image. 
+![screenshot image](screenshot/erb_1.png).
 
 
 ### Run PhotoSite application locally using Ruby Mine IDE
